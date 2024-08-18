@@ -12,7 +12,7 @@ import GUI from "lil-gui";
  * Base
  */
 // Debug
-const gui = new GUI();
+// const gui = new GUI();
 
 // Canvas
 const canvas = document.querySelector(".webgl");
@@ -25,9 +25,7 @@ const scene = new THREE.Scene();
  */
 const textureLoader = new THREE.TextureLoader();
 const matcapTexture = textureLoader.load("./static/textures/matcaps/3.png");
-const matcapDonutTexture = textureLoader.load(
-  "./static/textures/matcaps/1.png"
-);
+
 
 /**
  * Fonts Loader
@@ -134,7 +132,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 const clock = new THREE.Clock();
 
 const tick = () => {
-  const elapsedTime = clock.getElapsedTime();
+//   const elapsedTime = clock.getElapsedTime();
 
   // Update controls
   controls.update();
