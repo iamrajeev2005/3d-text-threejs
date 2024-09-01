@@ -24,14 +24,14 @@ const scene = new THREE.Scene();
  * Textures
  */
 const textureLoader = new THREE.TextureLoader();
-const matcapTexture = textureLoader.load("/textures/matcaps/3.png");
+const matcapTexture = textureLoader.load("./static/textures/matcaps/3.png");
 
 
 /**
  * Fonts Loader
  */
 const fontLoader = new FontLoader();
-fontLoader.load("/fonts/gentilis_regular.typeface.json", (font) => {
+fontLoader.load("./static/fonts/gentilis_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Rajeev's World", {
     font: font,
     size: 0.5,
